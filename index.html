@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-         body {
-          background-image: url(images/books-wooden-desk-table-abstract-background-education-copy-space-back-to-school-184388451.jpg);
-          background-repeat: no-repeat;
-          text-align: center;
-          background-size: cover;
-         }
-           
-    </style>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body {
+         background-image: url(images/books-wooden-desk-table-abstract-background-education-copy-space-back-to-school-184388451.jpg);
+         background-repeat: no-repeat;
+         text-align: center;
+         background-position: center center;
+         background-attachment: fixed;
+         background-size: cover;
+      }
+   </style>
 </head>
+
 <body>
-    <!-- <h1>If and Else Statement</h1>
+   <!-- <h1>If and Else Statement</h1>
      <h2>Temperature App</h2>
       <form onsubmit="conditioncheck(); return false;">
       <label for="temp">Temperature:</label>
@@ -41,35 +44,36 @@
        }
        
     </script> -->
-    <h1>CHECK YOUR RESULT</h1>
-    <form onsubmit="calculate(); return false;">
-    <label for="percentage">Enter your Percentage</label> <br> 
-    <input type="number" required min="1" id="percentage"> <br> <br>
-    <input type="submit" value="Check">
-</form>
-<h4 id="result"></h4>
+   <h1>CHECK YOUR RESULT</h1>
+   <form onsubmit="calculate(); return false;">
+      <label for="percentage">Enter your Percentage</label> <br>
+      <input type="number" required min="1" id="percentage"> <br> <br>
+      <input type="submit" value="Check">
+   </form>
+   <h4 id="result"></h4>
 
 
-<script>
-  function calculate() {
-    let percentage = +document.querySelector("#percentage").value;
-    if (percentage >= 80 && percentage <= 99){
-       document.querySelector("#result").innerHTML = "Congratulations!, You've got A1 Grade";
-    } else if (percentage >= 70 && percentage <= 79){
-       document.querySelector("#result").innerHTML = "Congratulations!, You've got A Grade";
-    } else if (percentage >= 60 && percentage <= 69){
-       document.querySelector("#result").innerHTML = "You've got B Grade";
-    } else if (percentage >= 50 && percentage <= 59){
-       document.querySelector("#result").innerHTML = " You've got C Grade";
-    } else if (percentage >= 40 && percentage <= 49){
-       document.querySelector("#result").innerHTML = " You've got D Grade";
-    } else if (percentage >= 10 && percentage <= 39){
-       document.querySelector("#result").innerHTML = " You are Fail";
-    } else {
-        document.querySelector("#result").innerHTML = "Invalid Percenatge";
-    }
-  }
-</script>
+   <script>
+      function calculate() {
+         let percentage = +document.querySelector("#percentage").value;
+         if (percentage >= 80 && percentage <= 99) {
+            document.querySelector("#result").innerHTML = "Congratulations!, You've got A1 Grade";
+         } else if (percentage >= 70 && percentage <= 79) {
+            document.querySelector("#result").innerHTML = "Congratulations!, You've got A Grade";
+         } else if (percentage >= 60 && percentage <= 69) {
+            document.querySelector("#result").innerHTML = "You've got B Grade";
+         } else if (percentage >= 50 && percentage <= 59) {
+            document.querySelector("#result").innerHTML = " You've got C Grade";
+         } else if (percentage >= 40 && percentage <= 49) {
+            document.querySelector("#result").innerHTML = " You've got D Grade";
+         } else if (percentage >= 10 && percentage <= 39) {
+            document.querySelector("#result").innerHTML = " You are Fail";
+         } else {
+            document.querySelector("#result").innerHTML = "Invalid Percenatge";
+         }
+      }
+   </script>
 
 </body>
+
 </html>
